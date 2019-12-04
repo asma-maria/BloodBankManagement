@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SellAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #870000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SellList">
+   <children>
+      <TableView fx:id="tableView" editable="true" layoutX="2.0" layoutY="110.0" prefHeight="455.0" prefWidth="800.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="110.0">
+         <columns>
+            <TableColumn fx:id="tableId" prefWidth="65.0" text="id" />
+            <TableColumn fx:id="tablePresentDate" prefWidth="111.0" text="Present Date" />
+            <TableColumn fx:id="tableBlood" prefWidth="110.0" text="Blood Group" />
+            <TableColumn fx:id="tableQtyBlood" prefWidth="179.0" text="Amount of Blood Bag" />
+            <TableColumn fx:id="tableBag" prefWidth="191.0" text="Price Per Bag" />
+            <TableColumn fx:id="tableTotalAmount" prefWidth="243.0" text="Total Amount" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="-7.0" layoutY="-1.0" prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label alignment="CENTER" layoutX="354.0" layoutY="70.0" text="Blood Sell Profile" textFill="#f8f6f6">
+               <font>
+                  <Font name="Candara Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="119.0" layoutX="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ba3d5c0dc7f5281f8c97c5ce74832016.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="search_text" layoutX="643.0" layoutY="50.0" onKeyReleased="#search" promptText=" Saerch Blood/Date" style="-fx-background-color: #fff;" unFocusColor="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="insert_btn" layoutX="41.0" layoutY="565.0" prefHeight="16.0" prefWidth="87.0" style="-fx-background-color: #870000;" text="Insert" textFill="#f8f4f4">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="97.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="delete_btn" layoutX="640.0" layoutY="565.0" prefHeight="16.0" prefWidth="87.0" style="-fx-background-color: #870000;" text="Delete" textFill="#f8f4f4">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

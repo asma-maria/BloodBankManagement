@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #870000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.WelcomeController">
+   <children>
+      <ImageView fitHeight="303.0" fitWidth="628.0" layoutX="103.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Blood-Donor-Month.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="33.0" prefHeight="34.0" prefWidth="325.0" text="BLOOD BANK MANAGEMENT" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton id="welcome_login" fx:id="welcome_login" layoutX="313.0" layoutY="430.0" prefHeight="34.0" prefWidth="174.0" style="-fx-background-color: #321911;" text="Click Here To Login" textFill="#f8f1f1">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="560.0" layoutY="7.0" prefHeight="34.0" prefWidth="182.0" text="Welcome  To Donate" textFill="WHITE">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="70.0" layoutX="742.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/превью-.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="122.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

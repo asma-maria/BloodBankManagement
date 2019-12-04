@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="1.0" prefHeight="81.0" prefWidth="420.0" text="Blood Bank Management System" textFill="#fffefe">
+               <font>
+                  <Font name="Candara Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="login_SignupButton" layoutX="686.0" layoutY="18.0" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="Sign Up" textFill="#fcf7f7">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="110.0" fitWidth="143.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="300.0" fitWidth="224.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/64976347-give-blood-save-life-vector-illustration-blood-donation-creative-concept-with-red-drop-.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField layoutX="305.0" layoutY="213.0" prefHeight="25.0" prefWidth="294.0" promptText="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="loginButton" layoutX="291.0" layoutY="409.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #870000;" text="Login" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField layoutX="305.0" layoutY="306.0" prefHeight="25.0" prefWidth="294.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <Label alignment="CENTER" layoutX="291.0" layoutY="128.0" prefHeight="37.0" prefWidth="308.0" style="-fx-background-color: #870000;" text="Admin Log In" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="button" layoutX="452.0" layoutY="409.0" text="Login" />
+   </children>
+</AnchorPane>

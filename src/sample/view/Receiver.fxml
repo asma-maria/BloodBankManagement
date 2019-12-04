@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReceiverAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ReceiverController">
+   <children>
+      <AnchorPane prefHeight="88.0" prefWidth="900.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label alignment="CENTER" layoutX="322.0" layoutY="61.0" prefHeight="29.0" prefWidth="241.0" text=" Registration Form" textFill="#f5f0f0">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="93.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="110.0" layoutX="387.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ba3d5c0dc7f5281f8c97c5ce74832016.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="155.0" layoutY="181.0" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #870000;" text="Gender" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="449.0" layoutY="106.0" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #870000;" text="Age" textFill="#eee8e8">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="90.0" style="-fx-background-color: #870000;" text="Request For Blood" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="242.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #870000;" text="Blood Group" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="452.0" layoutY="306.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #870000;" text="Email" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="310.0" prefHeight="28.0" prefWidth="73.0" style="-fx-background-color: #870000;" text="Phone No." textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="receiver_name" layoutX="238.0" layoutY="102.0" prefHeight="25.0" prefWidth="150.0" />
+      <JFXTextField fx:id="receiver_age" layoutX="554.0" layoutY="102.0" />
+      <ComboBox fx:id="receiver_blood" layoutX="238.0" layoutY="238.0" prefWidth="150.0" />
+      <JFXTextField fx:id="receiver_email" layoutX="550.0" layoutY="293.0" prefHeight="25.0" prefWidth="150.0" />
+      <JFXTextField fx:id="rcvr_phone" layoutX="245.0" layoutY="312.0" />
+      <Label layoutX="150.0" layoutY="380.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #870000;" text="Last Receipt" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="last_rcv" layoutX="245.0" layoutY="375.0" prefHeight="28.0" prefWidth="179.0" />
+      <Label alignment="CENTER" layoutX="145.0" layoutY="106.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #870000;" text="Name" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="435.0" layoutY="164.0" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #870000;" text="Qty of Blood" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="451.0" layoutY="230.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #870000;" text="Address" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="qty_blood" layoutX="554.0" layoutY="168.0" prefHeight="0.0" prefWidth="135.0" />
+      <JFXTextField fx:id="receiver_address" layoutX="550.0" layoutY="230.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label alignment="CENTER" layoutX="451.0" layoutY="374.0" prefHeight="29.0" prefWidth="62.0" style="-fx-background-color: #870000;" text=" Date" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="present_rcv" layoutX="565.0" layoutY="366.0" prefHeight="28.0" prefWidth="179.0" />
+      <JFXButton fx:id="submit_btns" layoutX="409.0" layoutY="427.0" prefHeight="17.0" prefWidth="80.0" style="-fx-background-color: #870000;" text="Submit" textFill="#fcf7f7">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="198.0" fitWidth="144.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/64976347-give-blood-save-life-vector-illustration-blood-donation-creative-concept-with-red-drop-.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="rcvr_gender" layoutX="237.0" layoutY="181.0" prefHeight="25.0" prefWidth="150.0" />
+      <JFXButton fx:id="gotoReceiver" layoutY="453.0" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #870000;" text="Show Receiver List" textFill="#f2ebeb">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="goHome" layoutX="724.0" layoutY="453.0" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #870000;" text="Go Home Page" textFill="#f2ebeb">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

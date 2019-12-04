@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="donorAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #870000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ReceiverList">
+   <children>
+      <TableView fx:id="tableView" editable="true" layoutX="2.0" layoutY="110.0" prefHeight="455.0" prefWidth="800.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="110.0">
+         <columns>
+            <TableColumn fx:id="tableId" prefWidth="33.0" text="id" />
+            <TableColumn fx:id="tableName" prefWidth="61.0" text="name" />
+            <TableColumn fx:id="tableAge" prefWidth="58.0" text="age" />
+            <TableColumn fx:id="tableGender" prefWidth="59.0" text="gender" />
+            <TableColumn fx:id="tableBlood" prefWidth="53.0" text="blood" />
+            <TableColumn fx:id="tablePhone" prefWidth="57.0" text="phone" />
+            <TableColumn fx:id="tableLastDonation" prefWidth="119.0" text="Last Received" />
+            <TableColumn fx:id="tablePresentDonation" prefWidth="101.0" text="Present_Date" />
+            <TableColumn fx:id="tableQtyBlood" prefWidth="100.0" text="Qty_Blood" />
+            <TableColumn fx:id="tableAddres" prefWidth="131.0" text="address" />
+            <TableColumn fx:id="tableEmail" prefWidth="127.0" text="email" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="-19.0" layoutY="-1.0" prefHeight="99.0" prefWidth="776.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label alignment="CENTER" layoutX="354.0" layoutY="70.0" text="Receiver Profile" textFill="#f8f6f6">
+               <font>
+                  <Font name="Candara Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="119.0" layoutX="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ba3d5c0dc7f5281f8c97c5ce74832016.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="search_text" layoutX="643.0" layoutY="50.0" onKeyReleased="#search" promptText=" Saerch Name/Email" style="-fx-background-color: #fff;" unFocusColor="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="delete_btn" layoutX="799.0" layoutY="569.0" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #870000;" text="Delete" textFill="#fff8f8">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="insert_btn" layoutX="14.0" layoutY="570.0" prefHeight="16.0" prefWidth="87.0" style="-fx-background-color: #870000;" text="Insert" textFill="#fff8f8">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="97.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="update_btn" layoutX="410.0" layoutY="571.0" text="Update" textFill="#f5f2f2">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

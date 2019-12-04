@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <JFXTextField fx:id="loginUsername" layoutX="426.0" layoutY="164.0" promptText="username">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="loginPass" layoutX="426.0" layoutY="238.0" prefHeight="25.0" prefWidth="154.0" promptText="password">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font></JFXPasswordField>
+      <AnchorPane layoutX="7.0" prefHeight="103.0" prefWidth="893.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label layoutX="318.0" layoutY="59.0" prefHeight="30.0" prefWidth="271.0" text="Blood Bank Management" textFill="#f8f6f6">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="109.0" fitWidth="143.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="login_SignupButton" layoutX="786.0" layoutY="35.0" prefHeight="34.0" prefWidth="68.0" style="-fx-background-color: black;" text="Signup" textFill="#fcfcfc">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="65.0" fitWidth="200.0" layoutX="379.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ba3d5c0dc7f5281f8c97c5ce74832016.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="374.0" fitWidth="200.0" layoutX="7.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/64976347-give-blood-save-life-vector-illustration-blood-donation-creative-concept-with-red-drop-.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="165.0" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #870000;" text="Username" textFill="#fcf8f8">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font></Label>
+      <JFXButton fx:id="button" layoutX="435.0" layoutY="408.0" style="-fx-background-color: #870000;" text="Login" textFill="#fffbfb">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font></JFXButton>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="238.0" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #870000;" text="Password" textFill="#fcf8f8">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

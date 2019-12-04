@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpAnchor" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUpController">
+   <children>
+      <AnchorPane layoutX="8.0" prefHeight="100.0" prefWidth="808.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label alignment="CENTER" layoutX="311.0" layoutY="63.0" prefHeight="33.0" prefWidth="285.0" text="Blood Bank Management System" textFill="#fcfcfc">
+               <font>
+                  <Font name="Candara Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/46bebf48-2912-43ad-826a-a80c3cb18312.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="122.0" layoutX="397.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ba3d5c0dc7f5281f8c97c5ce74832016.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="268.0" fitWidth="176.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/64976347-give-blood-save-life-vector-illustration-blood-donation-creative-concept-with-red-drop-.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="signupFirstName" layoutX="385.0" layoutY="116.0" prefHeight="25.0" prefWidth="238.0" promptText="First Name" />
+      <JFXTextField fx:id="signupLastName" layoutX="385.0" layoutY="166.0" prefHeight="25.0" prefWidth="238.0" promptText="Last Name" />
+      <JFXTextField fx:id="signUpUserName" layoutX="385.0" layoutY="216.0" prefHeight="25.0" prefWidth="238.0" promptText="User Name" />
+      <JFXTextField fx:id="SignUpBlood" layoutX="388.0" layoutY="353.0" prefHeight="25.0" prefWidth="238.0" promptText="Blood Gorup" />
+      <JFXTextField fx:id="signUpLocation" layoutX="388.0" layoutY="398.0" prefHeight="25.0" prefWidth="238.0" promptText="Location" />
+      <JFXButton layoutX="168.0" layoutY="389.0" text="Sign Up" textFill="#fcf8f8" />
+      <JFXButton fx:id="SignUpButton" layoutX="480.0" layoutY="449.0" style="-fx-background-color: #870000;" text="Sign Up" textFill="#fffdfd">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="signUpPassword" layoutX="385.0" layoutY="269.0" prefHeight="25.0" prefWidth="238.0" promptText="Password" />
+      <JFXComboBox fx:id="signupGender" layoutX="388.0" layoutY="313.0" promptText="Select Gender" />
+      <JFXButton fx:id="prevbtn" layoutX="14.0" layoutY="449.0" prefHeight="27.0" prefWidth="128.0" style="-fx-background-color: #870000;" text="Go To Login Page" textFill="#fcf8f8">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
